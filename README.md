@@ -1,21 +1,23 @@
 https://img.shields.io/github/stars/hackernikitaHACK/benv?style=social
-
 https://img.shields.io/github/forks/hackernikitaHACK/benv?style=social
-
 https://img.shields.io/github/issues/hackernikitaHACK/benv?style=social
 
 
 
+Если вы хотите, чтобы в вашем скрипте `benv` не использовался `.bat` файл для настройки пути, а путь нужно было бы настраивать вручную, вы можете изменить подход и удалить зависимость от `.bat` файла. Вместо этого пользователь сам должен будет добавить путь в системные переменные `PATH`. Вот как это можно описать в `README.md`:
+
 ```markdown
-# benv - Virtual Environment Manager
+# benv - Windows Bash Virtual Environment Manager
 
-`benv` is a command-line utility that helps you create, manage, and delete virtual environments in Python. This tool also allows you to activate the environment and run Bash within it. It is designed to be simple and easy to use.
+`benv` is a simple command-line utility designed for Windows users that allows you to easily create, manage, and delete virtual Python environments. It provides an easy way to set up a Bash environment within a virtual environment, enabling users to run Bash commands and work within isolated environments.
 
-## Features
+## Key Features
 
-- **Create virtual environments**: Quickly set up a Python environment with `benv --create <env_name>`.
-- **Activate the environment**: Launch Bash in the virtual environment with `benv --bash <env_name>`.
-- **Delete virtual environments**: Remove virtual environments with `benv --delete <env_name>`.
+- **Create virtual environments**: Set up isolated Python environments with ease.
+- **Activate and run Bash**: Launch Bash within a virtual environment on Windows.
+- **Delete virtual environments**: Easily delete the virtual environments when no longer needed.
+  
+This project is perfect for those who want to work with Bash in a Windows environment and manage multiple Python virtual environments in a clean and simple manner.
 
 ## Installation
 
@@ -27,30 +29,30 @@ You can download the source code of `benv` from GitHub or clone the repository u
 git clone https://github.com/hackernikitaHACK/benv.git
 ```
 
-### Step 2: Set up `benv` (Windows Only)
+### Step 2: Add `benv` to the System `PATH`
 
-1. **Navigate to the `benv` directory** where you downloaded or cloned the repository.
+To use `benv` from anywhere on your machine, you need to manually add its directory to your system's `PATH`:
 
-2. **Add the `benv` folder to your system's `PATH`**:
+1. **Find the directory where you cloned or downloaded the `benv` repository.**
 
-    - Open a Command Prompt as Administrator.
-    - Run the following command to add the `benv` folder to your `PATH`:
+2. **Add the directory to your system's `PATH`:**
+   
+   - **Windows 10/11**:
+     1. Open the Start menu, type `Environment Variables`, and select **Edit the system environment variables**.
+     2. In the System Properties window, click the **Environment Variables** button.
+     3. Under **System variables**, find and select the **Path** variable, then click **Edit**.
+     4. In the Edit Environment Variable window, click **New** and add the full path to the directory where you saved `benv` (e.g., `C:\path\to\benv`).
+     5. Click **OK** to apply the changes.
 
-    ```bash
-    python setting.bat
-    ```
+3. **Verify the installation**:
 
-    This batch file automatically adds the `benv` directory to your system's `PATH` so that you can run `benv` from anywhere on your machine.
+   After adding the directory to the `PATH`, open a new Command Prompt and check if `benv` is recognized by running the following command:
 
-### Step 3: Verify Installation
+   ```bash
+   benv --help
+   ```
 
-To verify that the installation was successful and `benv` is available in your `PATH`, run the following command in any Command Prompt:
-
-```bash
-benv --help
-```
-
-If everything is set up correctly, you should see the usage instructions for `benv`.
+   If everything is set up correctly, you should see the usage instructions for `benv`.
 
 ## Usage
 
