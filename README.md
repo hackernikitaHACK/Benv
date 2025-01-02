@@ -1,6 +1,6 @@
-https://img.shields.io/github/stars/hackernikitaHACK/benv?style=social
-https://img.shields.io/github/forks/hackernikitaHACK/benv?style=social
-https://img.shields.io/github/issues/hackernikitaHACK/benv?style=social
+![GitHub stars](https://img.shields.io/github/stars/hackernikitaHACK/Benv?style=social)
+![GitHub forks](https://img.shields.io/github/forks/hackernikitaHACK/Benv?style=social)
+![GitHub issues](https://img.shields.io/github/issues/hackernikitaHACK/benv?style=social)
 
 
 
